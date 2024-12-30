@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Register Your Product</h1>
+    <form id="productForm">
+     <div class="cont">
+      <div class="form-group">
+        <label for="productName">Product Name</label>
+        <select id="productName" required>
+          <option value="">Select from available a product</option>
+          <option value="smartphone">Smartphone</option>
+          <option value="laptop">Laptop</option>
+          <option value="bridges">Bridges</option>
+	  <option value="walls">Walls</option>
+	  <option value="calculators">Calculators</option>
+	  <option value="buses">Buses</option>
+	  <option value="trains">Trains</option>
+	  <option value="wires">Wires</option>
+	  <option value="pumps">Pumps</option>
+	  <option value="steel">Steel</option>
+	  <option value="paints">Paints</option>
+	  <option value="brushes">Brushes</option>
+	  <option value="balls">Balls</option>
+	  <option value="trees">Trees</option>
+	  <option value="bread">Bread</option>
+	  <option value="chocolate">Chocolate</option>
+	  <option value="bowls">Bowls</option>
+	  <option value="socks">Socks</option>
+	  <option value="bulbs">Bulbs</option>
+	  <option value="necklaces">Necklaces</option>
+	  <option value="watches">Watches</option>
+	  <option value="marbles">Marbles</option>
+	  <option value="robots">Robots</option>
+	  <option value="bband">Bband</option>
+	  <option value="television">Television</option>
+	  <option value="paste">Paste</option>
+	  <option value="latte">Latte</option>
+	  <option value="tea">Tea</option>
+	  <option value="pizza">Pizza</option>
+	  <option value="crayon">Crayon</option>
+	  <option value="candle">Candle</option>
+	  <option value="dispenser">Dispenser</option>
+	  <option value="guitor">Guitor</option>
+        </select>
+        <small class="error-message" id="productNameError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="serialNumber">Serial Number</label>
+        <input
+          type="text"
+          id="serialNumber"
+          maxlength="12"
+          placeholder="Enter 12-character serial number"
+          required
+        />
+        <small class="error-message" id="serialNumberError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="purchaseDate">Purchase Date</label>
+        <input type="date" id="purchaseDate" required />
+        <small class="error-message" id="purchaseDateError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="customerName">Customer Name</label>
+        <input
+          type="text"
+          id="customerName"
+          placeholder="Enter your name"
+          required
+        />
+        <small class="error-message" id="customerNameError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+        <small class="error-message" id="emailError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input
+          type="tel"
+          id="phoneNumber"
+          placeholder="Enter 10-digit phone number"
+          required
+        />
+        <small class="error-message" id="phoneNumberError"></small>
+      </div>
+
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="terms" required />
+          I agree to the terms and conditions
+        </label>
+        <small class="error-message" id="termsError"></small>
+      </div>
+     </div>
+      <button type="submit">Register Product</button>
+    </form>
+    <p id="successMessage" class="success-message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
