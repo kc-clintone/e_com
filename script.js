@@ -20,7 +20,7 @@ form.addEventListener("input", (e) => {
   if (target.id === "email") {
     const email = target.value;
     if (!/^\S+@\S+\.\S+$/.test(email)) {
-      showError("email", "Invalid email format.");
+      showError("email", "Enter a valid email email address");
     } else {
       clearError("email");
     }
@@ -70,7 +70,7 @@ form.addEventListener("submit", (e) => {
 
   // If the form is valid
   if (isValid) {
-    successMessage.textContent = "Thank you for registering your product!";
+    successMessage.textContent = "You have successfully registerd your product!";
     form.reset();
     document.querySelectorAll(".error-message").forEach((el) => (el.textContent = ""));
   }

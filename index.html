@@ -14,7 +14,7 @@
       <div class="form-group">
         <label for="productName">Product Name</label>
         <select id="productName" required>
-          <option value="">Select from available a product</option>
+          <option value="">Select an option</option>
           <option value="smartphone">Smartphone</option>
           <option value="laptop">Laptop</option>
           <option value="bridges">Bridges</option>
@@ -58,15 +58,16 @@
           type="text"
           id="serialNumber"
           maxlength="12"
-          placeholder="Enter 12-character serial number"
+          placeholder="Example: Hy8P06KhlqJL"
           required
+          class="form-control"
         />
         <small class="error-message" id="serialNumberError"></small>
       </div>
 
       <div class="form-group">
         <label for="purchaseDate">Purchase Date</label>
-        <input type="date" id="purchaseDate" required />
+        <input type="date" id="purchaseDate" required class="form-control" placeholder="12/02/1999"/>
         <small class="error-message" id="purchaseDateError"></small>
       </div>
 
@@ -75,8 +76,9 @@
         <input
           type="text"
           id="customerName"
-          placeholder="Enter your name"
+          placeholder="Michelle Njeri"
           required
+          class="form-control"
         />
         <small class="error-message" id="customerNameError"></small>
       </div>
@@ -86,8 +88,9 @@
         <input
           type="email"
           id="email"
-          placeholder="Enter your email"
+          placeholder="example@email.com"
           required
+          class="form-control"
         />
         <small class="error-message" id="emailError"></small>
       </div>
@@ -97,23 +100,26 @@
         <input
           type="tel"
           id="phoneNumber"
-          placeholder="Enter 10-digit phone number"
+          placeholder="Phone can be: 07xx xxx xxx"
           required
+          class="form-control"
         />
         <small class="error-message" id="phoneNumberError"></small>
       </div>
 
-      <div class="form-group">
+      <div class="agree">
+        <input type="checkbox" id="terms" required class="check" />
         <label>
-          <input type="checkbox" id="terms" required />
-          I agree to the terms and conditions
+          By registering, I agree to the <span>terms</span> and <span>conditions</span> of nova
         </label>
         <small class="error-message" id="termsError"></small>
       </div>
      </div>
       <button type="submit">Register Product</button>
     </form>
-    <p id="successMessage" class="success-message"></p>
+      <div class="success-box">
+        <p id="successMessage" class="success-message"></p>
+      </div>
   </div>
 
   <script src="script.js"></script>
