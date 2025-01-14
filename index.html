@@ -3,11 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Registration</title>
+  <title>Nova product registration</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   <header class="navbar">
+    <nav>
+      <div class="logo">
+        <img src="assets/logo.png" alt="brand" />
+      </div>
+      <ul class="menu">
+        <li><a href="#">dashboard</a></li>
+        <li><a href="#">shop</a></li>
+        <li><a href="#">about</a></li>
+      </ul>
+      <div class="mobile-menu">
+        <img src="assets/menu.png" alt="menu" />
+      </div>
+    </nav>
+   </header>
+  <main>
   <div class="container">
+    <div class="hero">
+      <img src="assets/logo.png" alt="brand" />
+    </div>
     <h1>Register Your Product</h1>
     <form id="productForm">
      <div class="cont">
@@ -121,7 +140,11 @@
         <p id="successMessage" class="success-message"></p>
       </div>
   </div>
+  </main>
 
   <script src="script.js"></script>
+<footer>
+  <p>&copy; 2025 Nova. All Rights Reserved</p>
+</footer>
 </body>
 </html>
