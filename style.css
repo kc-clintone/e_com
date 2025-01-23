@@ -94,6 +94,10 @@ body{
   color: #333;
   width: 100vw;
   height: 100vh;
+  background-image: url('./assets/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .container {
@@ -112,7 +116,7 @@ form {
   max-width: 600px;
   margin: 20px 0;
   padding: 20px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
